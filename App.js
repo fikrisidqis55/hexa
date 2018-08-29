@@ -9,22 +9,41 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View,
+  Image
 } from 'react-native';
 
 const instructions = Platform.select({
-  android:
-    'Hello :D\n\n'+'Nama : Muhammad Fikri Sidqi\n' + 'Kelas : XI RPL 3\n'+'No.Absen : 28'
+ 
 });
+
 
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
+        <Text style={styles.welcome}>
+        </Text>
+        <Text style={styles.instructions}>
+        </Text>
+        <Text>Hallo!!!</Text>
+        <Text></Text>
+        <Text></Text>
+        <Text></Text>
+        <Text></Text>
+        <Image source={require('./fikri.jpg')} style={{width:240, height:300}} />
+        <Text></Text>
+        <Text></Text>
+        <Text></Text>
+        <Text></Text>
+        <Text>Nama : Muhammad Fikri Sidqi</Text>
+        <Text>Kelas : XI RPL 3</Text>
+        <Text>No Absen : 28</Text>
         <Text style={styles.instructions}>
           {instructions}
         </Text>
+    
       </View>
     );
   }
@@ -35,7 +54,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#bdc7d8',
+    backgroundColor: '#a3bffc',
   },
   welcome: {
     fontSize: 20,
@@ -44,7 +63,7 @@ const styles = StyleSheet.create({
   },
   instructions: {
     textAlign: 'center',
-    color: '#10102c',
+    color: '#333333',
     marginBottom: 5,
   },
 });
